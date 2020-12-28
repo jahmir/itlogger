@@ -2,13 +2,13 @@ import React, { useEffect} from 'react'
 import Preloader from '../layout/Preloader';
 import LogItem from './LogItem';
 import { connect } from 'react-redux';
-import {getLogs} from '../../actions/logActions'
+import { getLogs } from '../../actions/logActions'
 
-const Logs = ({ log: {logs, loading}, getLogs }) => {
+const Logs = ({ log2: {logs, loading}, getLogs }) => {
 
     useEffect(() => {
        getLogs();
-    })
+    }, [getLogs])
 
     if(loading || logs === null){
         return <Preloader/>
@@ -19,17 +19,15 @@ const Logs = ({ log: {logs, loading}, getLogs }) => {
             <li className="collection-header">
                 <h4 className="center">System Logs</h4>
             </li>
-            {!loading && logs.length === 0 ? (<p className="center">No Logs to show...</p>) : (
+            {!loading && logs.length === 0 ? (<p className='center'>No Logs to show...</p>) : (
                 logs.map(log => <LogItem log={log} key={log.id}/>)
             )}
         </ul>
     )
 }
 
-function mapStateToProps(state) {
-    return ({
-        log: state.log
-    });
-}
+const mapStateToProps = (state) => ({
+    log2: state.log
+})
 
 export default connect(mapStateToProps, { getLogs })(Logs)
