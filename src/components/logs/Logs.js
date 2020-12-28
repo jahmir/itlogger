@@ -4,7 +4,7 @@ import LogItem from './LogItem';
 import { connect } from 'react-redux';
 import { getLogs } from '../../actions/logActions'
 
-const Logs = ({ log2: {logs, loading}, getLogs }) => {
+const Logs = ({ log: {logs, loading}, getLogs }) => {
 
     useEffect(() => {
        getLogs();
@@ -27,7 +27,7 @@ const Logs = ({ log2: {logs, loading}, getLogs }) => {
 }
 
 const mapStateToProps = (state) => ({
-    log2: state.log
+    log: state.log
 })
 
 export default connect(mapStateToProps, { getLogs })(Logs)
