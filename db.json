@@ -1,18 +1,18 @@
 {
   "logs": [
     {
-      "message": "Log 1",
+      "message": "change",
       "attention": false,
       "tech": "John Doe",
-      "date": "2020-12-28T03:40:59.271Z",
+      "date": "2020-12-28T09:25:50.305Z",
       "id": 1
     },
     {
-      "id": 2,
-      "message": "Log 2",
-      "attention": true,
-      "tech": "John Doe",
-      "date": "2020-12-28T04:10:08.175Z"
+      "message": "second",
+      "attention": false,
+      "tech": "Sam Smith",
+      "date": "2020-12-28T09:25:57.903Z",
+      "id": 2
     }
   ],
   "techs": [
