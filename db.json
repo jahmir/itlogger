@@ -1,11 +1,11 @@
 {
   "logs": [
     {
+      "id": 1,
       "message": "change",
       "attention": false,
-      "tech": "John Doe",
-      "date": "2020-12-28T09:25:50.305Z",
-      "id": 1
+      "tech": "Sara Wagner",
+      "date": "2020-12-28T12:55:45.382Z"
     },
     {
       "message": "second",
@@ -29,7 +29,7 @@
     {
       "id": 3,
       "firstName": "Sara",
-      "lastName": "Wilson"
+      "lastName": "Wagner"
     }
   ]
 }
