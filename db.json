@@ -1,35 +1,18 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "change",
+      "message": "Uninstall RAM on station 005",
       "attention": false,
       "tech": "Sara Wagner",
-      "date": "2020-12-28T12:55:45.382Z"
-    },
-    {
-      "message": "second",
-      "attention": false,
-      "tech": "Sam Smith",
-      "date": "2020-12-28T09:25:57.903Z",
+      "date": "2020-12-28T13:20:18.525Z",
       "id": 2
     }
   ],
   "techs": [
     {
-      "id": 1,
-      "firstName": "John",
-      "lastName": "Doe"
-    },
-    {
-      "id": 2,
-      "firstName": "Sam",
-      "lastName": "Smith"
-    },
-    {
-      "id": 3,
-      "firstName": "Sara",
-      "lastName": "Wagner"
+      "firstName": "Altair",
+      "lastName": "John",
+      "id": 1
     }
   ]
 }
